@@ -23,7 +23,12 @@ local keymap = vim.keymap.set
 -- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", { noremap = true, silent = true })
 keymap("i", "kj", "<ESC>", { noremap = true, silent = true })
+
+-- Press a ctrl + m to exit search
 keymap("n", "<C-m>", ":noh<CR>", { noremap = true, silent = true})
+
+-- Press ctrl w fro vsplit
+keymap("n", "<C-w>", ":vsplit<CR>", { noremap = true, silent = true })
 
 -- Navigate split panes
 keymap("n", "<C-h>", "<C-w>h", { noremap = true, silent = true })
