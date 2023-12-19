@@ -4,12 +4,12 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 local options = {
   expandtab = true,      -- convert tabs to spaces
-  shiftwidth = 4,        -- the number of spaces inserted for each indentation
-  tabstop = 4,           -- insert 2 spaces for a tab
+  --shiftwidth = 4,        -- the number of spaces inserted for each indentation
+  --tabstop = 4,           -- insert 2 spaces for a tab
   cursorline = true,     -- highlight the current line
   number = true,         -- set numbered lines
   relativenumber = true, -- set relative numbered lines
-  numberwidth = 4,
+  --numberwidth = 4,
 }
 
 lvim.transparent_window = true
@@ -45,4 +45,5 @@ lvim.builtin.which_key.mappings["t"] = {
 
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
+lvim.builtin.telescope = { layout_strategy = "horizontal" }
 
