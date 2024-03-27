@@ -47,3 +47,6 @@ lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Project
 
 lvim.builtin.telescope = { layout_strategy = "horizontal" }
 
+-- Remapping of telescope find files, to get the preview.
+lvim.builtin.which_key.mappings["f"] = { "<cmd>Telescope find_files<cr>", "Find File" }
+
